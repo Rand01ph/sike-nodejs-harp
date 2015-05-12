@@ -12,8 +12,11 @@
   ],
   "author": "Rand01ph",
   "license": "MIT",
-  "bin": "bin/mini-harp.js",
+  "bin": {
+    "mini-harp": "./bin/mini-harp.js"
+  },
   "dependencies": {
-    "connect": "^3.0.1"
+    "connect": "^3.0.1",
+    "minimist": "^1.1.1"
   }
 }
