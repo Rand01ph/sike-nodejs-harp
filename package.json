@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "connect": "^3.0.1",
+    "connect-jade": "0.0.5",
     "minimist": "^1.1.1"
   }
 }
