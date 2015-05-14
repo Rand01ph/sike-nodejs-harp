@@ -6,17 +6,18 @@ var makeJade = require('./lib/processor/jade');
 var makeLess = require('./lib/processor/less');
 var path = require('path');
 
+//route
 function setRoute(req, res, next) {
-	if (path.extname(req.url) == '.jade') {
-		console.log('a jade file');
+	if (req.url == '/') {
+		req.url += 'index.html';
 	}
-	else{
+	else {
 		next();
 	}
 }
 
 
-function createMiniHarp(root){
+function createMiniHarp(root) {
 	var app = connect();
 	app.use(setRoute).use(serveStatic(root)).use(makeJade(root)).use(makeLess(root));
 	return app;
