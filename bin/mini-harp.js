@@ -12,7 +12,6 @@ if (argv.port) {
 
 //PATH
 var path = process.cwd();
-console.log(path);
 if (argv._[0]) {
 	path = argv._[0];
 }
