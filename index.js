@@ -3,7 +3,7 @@ module.exports = createMiniHarp;
 var connect = require("connect");
 var serveStatic = require('serve-static');
 var makeJade = require('./lib/processor/jade');
-var makeJade = require('./lib/processor/less');
+var makeLess = require('./lib/processor/less');
 var path = require('path');
 
 function setRoute(req, res, next) {
